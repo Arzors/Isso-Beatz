@@ -197,6 +197,35 @@ body{
   .social-link:hover {
     color: #c13584;
   }
+
+
+#buttons-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin: 35px;
+    gap: 35px;
+}
+
+@media (max-width: 1024px) {
+    #buttons-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    #buttons-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    #buttons-container {
+        grid-template-columns: 1fr;
+    }
+}
+
   
   
 
